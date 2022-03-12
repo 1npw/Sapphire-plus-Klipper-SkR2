@@ -58,4 +58,11 @@ REMINDER:
             OPTIONAL:
      - RPi microcontroller: https://www.klipper3d.org/RPi_microcontroller.html
      - Klipper_Expander: https://github.com/timmit99/Voron-Hardware/tree/master/Klipper_Expander
+     
+   A word of Warning
+Since I have heard people tring to copy my tmc optimization. All driver_xxx values used in tmc.cfg are optimized for the physical drivers hocked up in the different slots and the motors I use. Do not copy these driver_xxx values as there could harm and worst case damage your drivers or motors
+
+I make my config public so that people can get ideas what you can do with macros and how to solve different problems. But I do not recommand to copy any macro from here blind without understanding what it does.
+
+Disclaimer: Usage of this printer config happens at your own risk!
              
