@@ -1,1 +1,19 @@
 # Based and inspired by zellneralex config: https://github.com/zellneralex/klipper_config
+ Ref: https://github.com/bigtreetech/SKR-2
+      https://www.klipper3d.org
+      https://github.com/Klipper3d/klipper/blob/master/config/generic-bigtreetech-skr-2.cfg
+      https://docs.mainsail.xyz
+
+# efore you use this you need to istall:
+    - KIAUH: https://github.com/th33xitus/kiauh
+    
+      Installation: 
+             cd ~
+             git clone https://github.com/th33xitus/kiauh.git
+             ./kiauh/kiauh.sh
+    - Moonraker-timelapse: https://github.com/mainsail-crew/moonraker-timelapse
+    
+      Installation: 
+             cd ~/
+             git clone https://github.com/mainsail-crew/moonraker-timelapse.git
+             bash ~/moonraker-timelapse/install.sh
