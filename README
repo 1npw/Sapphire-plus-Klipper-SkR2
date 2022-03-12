@@ -1,19 +1,61 @@
+
+
+THIS HAVENT BEEN TESTED YET,IF YOU USE IT  AND HAVE ISSUE PLEASE PUT A REQUEST 
+
+
 # Based and inspired by zellneralex config: https://github.com/zellneralex/klipper_config
  Ref: https://github.com/bigtreetech/SKR-2
       https://www.klipper3d.org
       https://github.com/Klipper3d/klipper/blob/master/config/generic-bigtreetech-skr-2.cfg
       https://docs.mainsail.xyz
+      https://github.com/Annex-Engineering/Sherpa_Mini-Extruder
+      https://cults3d.com/en/3d-model/various/the-diamond-mount-direct-drive-hotend-mount-for-v6-nf-smart-dragon-dragonfly-zodiac-bmo-and-more-sapphire-pro-sp-3-plus-sp-5-printers-laurienzudesign-2
 
-# efore you use this you need to istall:
+REMINDER:
+# This file contains common pin mappings for the BigTreeTech SKR 2.
+# To use this config, the firmware should be compiled for the
+# STM32F407 with a "32KiB bootloader".
+
+# In newer versions of this board shipped in late 2021 the STM32F429
+# is used, if this is the case compile for this with a "32KiB bootloader"
+# You will need to check the chip on your board to identify which you have.
+#
+# The "make flash" command does not work on the SKR 2. Instead,
+# after running "make", copy the generated "out/klipper.bin" file to a
+# file named "firmware.bin" on an SD card and then restart the SKR 2
+# with that SD card.
+
+# See docs/Config_Reference.md for a description of parameters.
+
+# Note: The initial revision of this board has a flaw that can cause
+# damage to itself and other boards. Be sure to verify the board is
+# not impacted by this flaw before using it.
+
+# Before you use this you need to istall:
     - KIAUH: https://github.com/th33xitus/kiauh
     
       Installation: 
              cd ~
              git clone https://github.com/th33xitus/kiauh.git
              ./kiauh/kiauh.sh
+             
+           in KIAUH instll gcode_shell_command.py (for input shaper)
+           
     - Moonraker-timelapse: https://github.com/mainsail-crew/moonraker-timelapse
     
       Installation: 
              cd ~/
              git clone https://github.com/mainsail-crew/moonraker-timelapse.git
              bash ~/moonraker-timelapse/install.sh
+             
+    - ADXL345: https://www.klipper3d.org/Measuring_Resonances.html
+    
+      Installation: 
+             ~/klippy-env/bin/pip install -v numpy
+             sudo apt update
+             sudo apt install python3-numpy python3-matplotlib
+                          
+            OPTIONAL:
+     - RPi microcontroller: https://www.klipper3d.org/RPi_microcontroller.html
+     - Klipper_Expander: https://github.com/timmit99/Voron-Hardware/tree/master/Klipper_Expander
+             
